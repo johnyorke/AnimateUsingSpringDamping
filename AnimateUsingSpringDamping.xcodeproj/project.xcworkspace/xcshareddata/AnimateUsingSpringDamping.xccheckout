@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7048005C-D576-4203-93EF-C6EAE8DE124D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AnimateUsingSpringDamping</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>12984B95-B9D4-413D-A9AC-997B390CB92B</key>
+		<string>https://github.com/johnyorke/AnimateUsingSpringDamping.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AnimateUsingSpringDamping.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>12984B95-B9D4-413D-A9AC-997B390CB92B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/johnyorke/AnimateUsingSpringDamping.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>12984B95-B9D4-413D-A9AC-997B390CB92B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>12984B95-B9D4-413D-A9AC-997B390CB92B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AnimateUsingSpringDamping</string>
+		</dict>
+	</array>
+</dict>
+</plist>
