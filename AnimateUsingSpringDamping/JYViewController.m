@@ -36,11 +36,14 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.alertDefaultPosition = self.alertView.center;
     
+    // Initial animation with default values
     [self animateAlert];
     
+    // Add tap GR to the alert in order to trigger an animation
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(animateAlert)];
     [self.alertView addGestureRecognizer:tap];
     
+    // Update the value labels whenever slider values are changed
     [self.durationSlider addTarget:self action:@selector(updateLabels) forControlEvents:UIControlEventValueChanged];
     [self.springDampingSlider addTarget:self action:@selector(updateLabels) forControlEvents:UIControlEventValueChanged];
     [self.springVelocitySlider addTarget:self action:@selector(updateLabels) forControlEvents:UIControlEventValueChanged];
@@ -54,12 +57,15 @@
 
 - (void) animateAlert
 {
+    
+    // Set the parameters to be passed into the animation
     self.duration = [NSNumber numberWithFloat:self.durationSlider.value];
     self.damping = [NSNumber numberWithFloat:self.springDampingSlider.value];
     self.velocity = [NSNumber numberWithFloat:self.springVelocitySlider.value];
     
+    // int to hold UIViewAnimationOption
     NSInteger option;
-    
+    // Set the option value
     if (self.optionsSegmentedControl.selectedSegmentIndex == 0) {
         option = UIViewAnimationOptionCurveEaseIn;
     } else if (self.optionsSegmentedControl.selectedSegmentIndex == 1){
@@ -70,8 +76,10 @@
         option = UIViewAnimationCurveLinear;
     }
     
+    // Get the alert just off the screen
     [self moveAlertOffScreen];
     
+    //Animate using values from sliders and segementedControl
     [UIView animateWithDuration:[self.duration floatValue] delay:0 usingSpringWithDamping:[self.damping floatValue] initialSpringVelocity:[self.velocity floatValue] options:option animations:^{
         self.alertView.center = self.alertDefaultPosition;
     }completion:nil];
@@ -79,19 +87,22 @@
 
 - (void) moveAlertOffScreen
 {
+    // Get the alert just off screen
     self.alertView.center = CGPointMake(self.alertView.center.x, self.alertView.center.y - [UIScreen mainScreen].bounds.size.height / 2);
-}
-
-- (BOOL) prefersStatusBarHidden
-{
-    return YES;
 }
 
 - (void) updateLabels
 {
+    // Update the labels above each slider
     self.durationLabel.text = [NSString stringWithFormat:@"%.1f",self.durationSlider.value];
     self.dampingLabel.text = [NSString stringWithFormat:@"%.1f",self.springDampingSlider.value];
     self.velocityLabel.text = [NSString stringWithFormat:@"%.1f",self.springVelocitySlider.value];
+}
+
+
+- (BOOL) prefersStatusBarHidden
+{
+    return YES;
 }
 
 @end

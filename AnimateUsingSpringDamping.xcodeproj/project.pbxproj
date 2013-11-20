@@ -206,6 +206,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "John Yorke";
 				TargetAttributes = {
+					DF7ACD6E183CB4C500466FBE = {
+						DevelopmentTeam = YBA24E92QD;
+					};
 					DF7ACD8F183CB4C500466FBE = {
 						TestTargetID = DF7ACD6E183CB4C500466FBE;
 					};
@@ -389,10 +392,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AnimateUsingSpringDamping/AnimateUsingSpringDamping-Prefix.pch";
 				INFOPLIST_FILE = "AnimateUsingSpringDamping/AnimateUsingSpringDamping-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -402,10 +408,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AnimateUsingSpringDamping/AnimateUsingSpringDamping-Prefix.pch";
 				INFOPLIST_FILE = "AnimateUsingSpringDamping/AnimateUsingSpringDamping-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +480,7 @@
 				DF7ACDA3183CB4C500466FBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF7ACDA4183CB4C500466FBE /* Build configuration list for PBXNativeTarget "AnimateUsingSpringDampingTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +489,7 @@
 				DF7ACDA6183CB4C500466FBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
