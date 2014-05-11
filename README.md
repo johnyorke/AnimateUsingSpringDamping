@@ -1,4 +1,4 @@
-<img src="https://github.com/johnyorke/AnimateUsingSpringDamping/blob/master/Images/image.gif">
+<img src="https://github.com/johnyorke/AnimateUsingSpringDamping/blob/master/Images/image.gif?raw=true">
 
 AnimateUsingSpringDamping
 =========================
