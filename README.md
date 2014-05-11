@@ -1,3 +1,5 @@
+<img src="https://raw.github.com/johnyorke/AnimateUsingSpringDamping/master/AnimateUsingSpringDamping/Images/image.gif">
+
 AnimateUsingSpringDamping
 =========================
 
